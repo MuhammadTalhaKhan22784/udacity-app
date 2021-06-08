@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>client</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="main rs_main">
+        <!-- <div class="black_screen"></div> -->
+        <div class="sidebar">
+            <div class="s_content e_content">
+                <a href="index.html"><i class="button_back far fa-arrow-alt-circle-left"></i></a>
+                <div class="ex_1">
+                    <input class="animate__animated animate__slow animate__backInDown" id="e1" type="text" placeholder="Enter your favorite area!">
+                    <label for="e1" class="label_info">Enter your favorite area!</label>
+                    <button class="animate__animated animate__fast animate__bounce">Zoom</button>
+                </div>
+                <hr class="e_hr infinite animate__animated animate__delay-2s animate__slow animate__fadeInLeft">
+                <div class="ex_2">
+                    <span class="light_blue text"> Within </span>
+                    <select id="max-duration" class="textduration light_blue">
+                        <option value="10">10 min</option>
+                        <option value="15">15 min</option>
+                        <option value="30">30 min</option>
+                        <option value="60">1 hour</option>
+                    </select>
+                    <select id="mode" class="textduration light_blue">
+                        <option value="DRIVING">drive</option>
+                        <option value="WALKING">walk</option>
+                        <option value="BICYCLING">bike</option>
+                        <option value="TRANSIT">transit ride</option>
+                    </select>
+                    <span class="light_blue text">of</span>
+                </div>
+                <hr class="e_hr infinite animate__animated animate__delay-2s animate__slow animate__fadeInRight">
+
+                <div class="ex_3">
+                    <input class="animate__animated animate__slow animate__delay-2s animate__fadeIn" id="e2" class="textduration" type="text"
+                        placeholder="Ex: Google Office NYC or 75 9th Ave, New York,">
+                    <label for="e2" class="label_info">Ex: Google Office NYC or 75 9th Ave, New York, NY</label>
+                    <button class="animate__animated animate__fast animate__bounce">Go</button>
+                </div>
+                <hr class="e_hr infinite animate__animated animate__delay-2s animate__slow animate__fadeInUp">
+                <div class="d-flex flex-column ex_4">
+                    <span class="light_blue text">Search for nearby places</span>
+                    <div class="ex_3">
+                        <input class="animate__animated animate__fast animate__backInUp" id="e3" class="textduration" type="text"
+                            placeholder="Ex: Google Office NYC or 75 9th Ave, New York,">
+                        <label for="e3" class="label_info">Ex: Google Office NYC or 75 9th Ave, New York, NY</label>
+                        <button class="animate__animated animate__fast animate__bounce">Go</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="right-side rs_2">
+            <div class="sidebar_ham" style="display: flex; align-items: center;">
+                <!-- <img class="button_mobail" src="./images/hamburger.png" alt=""> -->
+                <i class="button_mobail fas fa-hamburger"></i>
+                <!-- <button class="button_mobail">toggle on mobail</button> -->
+                <!-- <img class="button" src="./images/hamburger.png" alt=""> -->
+                <i class="button fas fa-hamburger"></i>
+                <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no"
+                        marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
