@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&family=Ubuntu:wght@400;500&display=swap');* {
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&family=Ubuntu:wght@400;500&display=swap");
+* {
   margin: 0;
   padding: 0;
   text-transform: capitalize;
   box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;}
+  font-family: "Ubuntu", sans-serif;
+}
 
 :root {
   font-size: 90%;
@@ -24,12 +26,22 @@
 .sidebar {
   /* background-color: #e3e2da; */
   background-color: #f1db2e99;
-  transition: all 0.1s linear;
+  /* transition: all 0.1s linear; */
   transform: translateX(0vw);
-  transition: all 0.2s linear;
+  transition: all 0.4s;
   height: 100%;
   padding-bottom: 20px;
   /* width: 500px; */
+}
+
+.inp_div button {
+  padding: 8px 16px !important;
+  margin-right: 10px;
+  margin-top: -5px;
+}
+
+.inp_div input {
+  height: 35px;
 }
 
 .sidebar_ham {
@@ -198,7 +210,8 @@
   padding: 0 10px;
 } */
 
-.t_content > a, .e_content > a {
+.t_content > a,
+.e_content > a {
   margin: 10px 0;
   width: 90%;
 }
@@ -206,8 +219,7 @@
 .t_content h1 {
   width: 90%;
   color: #b94abb;
-  font-family: 'Josefin Sans', sans-serif;
-
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .t_content input {
@@ -247,7 +259,7 @@
   margin-bottom: 12px;
 }
 
-.tc2_btn button{
+.tc2_btn button {
   width: 80px;
 }
 
@@ -291,7 +303,6 @@
   padding-left: 5px;
   outline: none;
   background: #faebd7a6;
-
 }
 
 .label_info {
@@ -300,14 +311,15 @@
   bottom: -5px;
   left: 10px;
   font-weight: 600;
-  font-size: 1rem;  transition: all 0.3s;
+  font-size: 1rem;
+  transition: all 0.3s;
   color: #713894;
 }
 
 .s_content input {
   transition: all 0.3s !important;
   background: #8a70a74f;
-outline: none;
+  outline: none;
 }
 
 .s_content input:placeholder-shown + .label_info {
@@ -326,7 +338,7 @@ outline: none;
   text-align: center;
   color: #b94abb;
   margin-top: 2rem;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 4rem;
 }
 
@@ -342,11 +354,8 @@ outline: none;
   line-height: 1.6;
   border: 1px solid #883994;
   padding: 10px;
-  font-family: 'Josefin Sans', sans-serif;
-
+  font-family: "Josefin Sans", sans-serif;
 }
-
-
 
 /* sidebar ends   ==================== */
 

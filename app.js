@@ -52,8 +52,26 @@ button_mobail.addEventListener("click", () => {
 
 function fun() {
   var x = document.createElement("INPUT");
+  var div = document.createElement('div')
+  div.setAttribute('class','inp_div')
   x.setAttribute("type", "text");
   x.setAttribute("name", "textInput");
   x.setAttribute("placeholder", "mid point");
-  document.getElementById("myForm").appendChild(x);
+  div.appendChild(x)
+  var span =document.createElement("span")
+  var dlt = document.createElement("button");
+  var dltText = document.createTextNode("\u00D7")
+  dlt.appendChild(dltText)
+  span.appendChild(dlt)
+  dlt.setAttribute("class","dltBtn")
+  dlt.setAttribute("onclick","dltRow(this)")
+  // document.getElementById("myForm").appendChild(span)
+  div.appendChild(span)
+  document.getElementById("myForm").appendChild(div);
+}
+
+
+function dltRow(e){
+  e.parentNode.parentNode.remove()
+  // console.log(e.parentNode.parentNode)
 }
