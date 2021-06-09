@@ -2,23 +2,9 @@ let a = document.querySelector(":root");
 let rightSide = document.querySelector(".right-side");
 let sidebar = document.querySelector(".sidebar");
 let button = document.querySelector(".button");
-let close_btn = document.querySelector(".close_btn");
-let button_mobail = document.querySelector(".button_mobail");
-let black_screen = document.querySelector(".black_screen");
 let main = document.querySelector(".main");
 
 let toggle = "open";
-
-window.addEventListener("resize", () => {
-  if (window.innerWidth < 980) {
-    main.style.gridTemplateColumns = "0% 1fr";
-    sidebar.style.transform = "translateX(-100vw)";
-  } else {
-    main.style.gridTemplateColumns = "30% 1fr";
-    sidebar.style.transform = "translateX(0vw)";
-    black_screen.style.display = "none";
-  }
-});
 
 button.addEventListener("click", () => {
   if (toggle === "open") {
@@ -36,21 +22,7 @@ button.addEventListener("click", () => {
   }
 });
 
-black_screen.addEventListener("click", () => {
-  sidebar.style.transform = "translateX(-100vw)";
-  black_screen.style.display = "none";
-});
-
-close_btn.addEventListener("click", () => {
-  sidebar.style.transform = "translateX(-100vw)";
-  black_screen.style.display = "none";
-});
-button_mobail.addEventListener("click", () => {
-  sidebar.style.transform = "translateX(0vw)";
-  black_screen.style.display = "block";
-});
-
-function fun() {
+function addPoints() {
   var x = document.createElement("INPUT");
   var div = document.createElement('div')
   div.setAttribute('class','inp_div')
@@ -65,7 +37,6 @@ function fun() {
   span.appendChild(dlt)
   dlt.setAttribute("class","dltBtn")
   dlt.setAttribute("onclick","dltRow(this)")
-  // document.getElementById("myForm").appendChild(span)
   div.appendChild(span)
   document.getElementById("myForm").appendChild(div);
 }
@@ -73,5 +44,10 @@ function fun() {
 
 function dltRow(e){
   e.parentNode.parentNode.remove()
-  // console.log(e.parentNode.parentNode)
 }
+
+let openSiderBarBtns = document.getElementById('openSiderBarBtn');
+let rightSidebars = document.querySelector('.right-side-bars');
+openSiderBarBtns.addEventListener('click', () => {
+    rightSidebars.classList.toggle('rs_content')
+});
